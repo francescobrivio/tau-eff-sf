@@ -141,7 +141,7 @@ class efficiency2 (object) :
 		data.Divide(full_num)			# SF for all the mc samples together
 
 		# Saving the full_mc_scale_factor on the Root File
-		lookup_table = ROOT.TFile.Open('new_mt_lookup_table.root','update')
+		lookup_table = ROOT.TFile.Open('mt_lookup_table.root','update')
 		lookup_table.cd()
 		if wp is 'loose' :
 			lookup_table.mkdir('tau_loose_iso')
